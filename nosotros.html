@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+     <!--header-->
+     <header class="header">
+        <a href="index.html" class="logo"><img src="img/logo3.png" alt=""></a>
+        <nav class="navbar">
+            <a href="index.html">Inicio</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="menu.html">Menu</a>
+            <a href="galleria.html">Galeria</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+
+        <div class="icons">
+            <div id="cart" class="fas fa-shopping-cart"></div>
+            <div id="login" class="fas fa-user"></div>
+            <div id="menu" class="fas fa-bars"></div>
+        </div>
+    </header>
+
+
+    <div class="heading">
+        <h1>Nosotros</h1>
+        <p><a href="index.html">Inicio>>></a>Nosotros</p>
+    </div>
+
+    <!--secciones-->
+
+    <section class="about">
+        <div class="row">
+            <div class="image">
+                <img src="img/pizzas/duda1.jpg" alt="">
+            </div>
+
+            <div class="content">
+                <h3>bienvenido a nuestra <span>pizzeria</span></h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa, rem odio! A ut excepturi, facilis quaerat voluptatibus molestiae omnis eius itaque explicabo impedit ali</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa, rem odio! A ut excepturi, facilis quaerat voluptatibus molestiae omnis eius itaque explicabo impedit ali</p>
+                <a href="#" class="btn">leer mas</a>
+            </div>
+        </div>
+    </section>
+
+    <!--blog-->
+    <sections class="blogs">
+        <h1 class="title">nuestros <span>blogs</span></h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <img src="img/blog/blog1.png" alt="">
+                <div class="icons">
+                    <a href=""><i class="fas fa-calendar"></i>31 de enero,2023</a>
+                    <a href=""><i class="fas fa-user"></i>por el chef</a>
+                </div>
+                <h3>"Un delicioso fetuccini a la bolognesa"</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum doloribus</p>
+                <a href="#" class="btn">leer mas</a>
+
+            </div>
+
+            <div class="box">
+                <img src="img/blog/blog2.png" alt="">
+                <div class="icons">
+                    <a href=""><i class="fas fa-calendar"></i>31 de octubre,2023</a>
+                    <a href=""><i class="fas fa-user"></i>por el administrador</a>
+                </div>
+                <h3>"Hallowhen con Tomatina"</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum doloribus</p>
+                <a href="#" class="btn">leer mas</a>
+
+            </div>
+
+            <div class="box">
+                <img src="img/blog/blog3.png" alt="">
+                <div class="icons">
+                    <a href=""><i class="fas fa-calendar"></i>14 de diciembre,2023</a>
+                    <a href=""><i class="fas fa-user"></i>por el Michael R.</a>
+                </div>
+                <h3>"Tomatina en el aniverario de Chancay"</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum doloribus</p>
+                <a href="#" class="btn">leer mas</a>
+
+            </div>
+        
+        </div>
+    </sections>
+
+    <!--footer-->
+    <section class="footer">
+        <div class="box-container">
+
+            <div class="box">
+                <h3>encuentranos en</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, similique!</p>
+                <div class="share">
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+            </div>  
+
+            <div class="box">
+                <h3>contactanos</h3>
+                <p>987654321</p>
+                <a href="" class="link">tomatina@gmail.com</a>
+            </div>
+    
+            <div class="box">
+                <h3>ubicanos</h3>
+                <p>Av.Saenz Peña 230 <br>
+                    Chancay -
+                    Huaral</p>
+            </div>
+        </div>
+        <div class="credit">creado por <span>MichaelDev</span> | ©todo los derechos reservados</div>
+        
+    </section>
+    
+    <script src="https://kit.fontawesome.com/94905e6380.js" crossorigin="anonymous"></script>
+    <script>
+        // Responsive Menu
+        const btnMenu = document.querySelector('#menu');
+        const menu = document.querySelector('.navbar');
+        let on_off = true;
+                btnMenu.addEventListener('click', () => {
+                    
+                    if (on_off) {
+                        menu.style.left = "0";
+                        menu.style.transition = "300ms";
+                        on_off = false;
+                    }else{
+                        on_off = false;
+                        menu.style.left = "-100%";
+                        menu.style.transition = "300ms";
+                        on_off = true;
+                    }
+                
+                });
+    </script>
+</body>
+</html>

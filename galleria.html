@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.5.0/css/lightgallery.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.5.0/lightgallery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.5.0/plugins/thumbnail/lg-thumbnail.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.5.0/plugins/zoom/lg-zoom.min.js"></script>
+</head>
+<body>
+    <!--header-->
+    <header class="header">
+        <a href="index.html" class="logo"><img src="img/logo3.png" alt=""></a>
+        <nav class="navbar">
+            <a href="index.html">Inicio</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="menu.html">Menu</a>
+            <a href="galleria.html">Galeria</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+
+        <div class="icons">
+            <div id="cart" class="fas fa-shopping-cart"></div>
+            <div id="login" class="fas fa-user"></div>
+            <div id="menu" class="fas fa-bars"></div>
+        </div>
+    </header>
+
+    <div class="heading">
+        <h1>Galeria</h1>
+        <p><a href="index.html">Inicio>>></a>Galeria</p>
+    </div>
+
+    <!-- galeria -->
+    <section class="gallery">
+        <div class="gallery-container">
+            <a href="img/galeria/g1.jpg" class="box">
+                <img src="img/galeria/g1.jpg" alt="">
+                <div class="icon"><i class="fas fa-plus"></i></div>
+            </a>
+
+            <a href="img/galeria/g2.jpg" class="box">
+                <img src="img/galeria/g2.jpg" alt="">
+                <div class="icon"><i class="fas fa-plus"></i></div>
+            </a>
+
+            <a href="img/galeria/g3.jpg" class="box">
+                <img src="img/galeria/g3.jpg" alt="">
+                <div class="icon"><i class="fas fa-plus"></i></div>
+            </a>
+
+            <a href="img/galeria/g4.jpg" class="box">
+                <img src="img/galeria/g4.jpg" alt="">
+                <div class="icon"><i class="fas fa-plus"></i></div>
+            </a>
+
+            <a href="img/galeria/g5.jpg" class="box">
+                <img src="img/galeria/g5.jpg" alt="">
+                <div class="icon"><i class="fas fa-plus"></i></div>
+            </a>
+
+            <a href="img/galeria/g6.png" class="box">
+                <img src="img/galeria/g6.png" alt="">
+                <div class="icon"><i class="fas fa-plus"></i></div>
+            </a>
+        </div>
+    </section>
+
+    <!--footer-->
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>encuentranos en</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, similique!</p>
+                <div class="share">
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+            </div>  
+
+            <div class="box">
+                <h3>contactanos</h3>
+                <p>987654321</p>
+                <a href="" class="link">tomatina@gmail.com</a>
+            </div>
+
+            <div class="box">
+                <h3>ubicanos</h3>
+                <p>Av.Saenz Peña 230 <br> Chancay - Huaral</p>
+            </div>
+        </div>
+        <div class="credit">creado por <span>MichaelDev</span> | ©todo los derechos reservados</div>
+    </section>
+
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/94905e6380.js" crossorigin="anonymous"></script>
+
+    <script>
+        lightGallery(document.querySelector('.gallery .gallery-container'))
+    </script>
+     <script>
+        // Responsive Menu
+        const btnMenu = document.querySelector('#menu');
+        const menu = document.querySelector('.navbar');
+        let on_off = true;
+                btnMenu.addEventListener('click', () => {
+                    
+                    if (on_off) {
+                        menu.style.left = "0";
+                        menu.style.transition = "300ms";
+                        on_off = false;
+                    }else{
+                        on_off = false;
+                        menu.style.left = "-100%";
+                        menu.style.transition = "300ms";
+                        on_off = true;
+                    }
+                
+                });
+    </script>
+</body>
+</html>
